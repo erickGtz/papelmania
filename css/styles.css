@@ -38,3 +38,7 @@ a .icono-grande {
   font-size: 3rem;  /* Puedes ajustar el tamaño a lo que necesites */
   color: black;
 }
+
+.roadmap {
+  border: #0D2C5E 2px solid;
+}
