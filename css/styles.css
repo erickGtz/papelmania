@@ -31,3 +31,14 @@
   font-size: 0.7cm; /* Ajusta el tamaño del separador */
   vertical-align: middle; /* Baja el separador para que esté alineado con el texto */
 }
+
+a .icono-grande {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 3rem;  /* Puedes ajustar el tamaño a lo que necesites */
+  color: black;
+}
+
+.roadmap {
+  border: #0D2C5E 2px solid;
+}
