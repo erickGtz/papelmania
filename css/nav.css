@@ -1,0 +1,47 @@
+/* Fuente */
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar personalizado */
+.navbar-custom {
+  background-color: #1c3d7b; /* Color de la barra de navegación */
+  padding: 1rem 1.5rem; /* Aumenta el tamaño de la barra */
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+}
+
+body {
+  padding-top: 80px; /* Añadir espacio para evitar que el contenido quede debajo del navbar fijo */
+}
+
+/* Estilo del logo de la marca */
+
+/* Estilos de las tarjetas */
+.navbar-custom .navbar-nav .nav-link {
+  color: white; /* Asegura que el texto es blanco por defecto */
+}
+
+.navbar-custom .navbar-nav .nav-link:hover, 
+.navbar-custom .dropdown-item:hover {
+  color: #ffc107 !important; /* Color amarillo al pasar el cursor */
+}
+
+
+
+/* Tamaño de letra del título y subtítulos */
+h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+
+/* Estilo de enlaces y elementos del menú */
+.navbar-brand,
+.nav-link,
+.dropdown-item {
+  font-size: 1.3rem;
+}
+
