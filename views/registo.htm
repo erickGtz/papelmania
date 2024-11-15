@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+
+  <link href="../css/styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="../js/scripts.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <!-- Vista 1: Personalización de perfil -->
+    <div class="view" id="view1">
+      <div class="left">
+        <h1>¡Empecemos personalizando tu perfil!</h1>
+      </div>
+      <div class="right">
+        <h2>¿Cómo te llamas?</h2>
+        <div class="progress-bar">
+          <div class="progress-step active"></div>
+          <div class="progress-step"></div>
+          <div class="progress-step"></div>
+        </div>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre">
+          
+          <label for="primer-apellido">Primer apellido:</label>
+          <input type="text" id="primer-apellido">
+          
+          <label for="segundo-apellido">Segundo apellido:</label>
+          <input type="text" id="segundo-apellido">
+          
+          <button type="button" onclick="nextView(2)">→</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Vista 2: Datos de contacto -->
+    <div class="view" id="view2" style="display: none;">
+      <button class="back-button" onclick="prevView(1)">←</button>
+      <div class="left">
+        <h1>¡Es hora de conectar!<br>Completa tus datos.</h1>
+      </div>
+      <div class="right">
+        <h2>Registra tus datos</h2>
+        <div class="progress-bar">
+          <div class="progress-step active"></div>
+          <div class="progress-step active"></div>
+          <div class="progress-step"></div>
+        </div>
+        <form>
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono">
+          
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo">
+          
+          <button type="button" onclick="nextView(3)">→</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Vista 3: Contraseña -->
+    <div class="view" id="view3" style="display: none;">
+      <button class="back-button" onclick="prevView(2)">←</button>
+      <div class="left">
+        <h1>¡Casi listo!<br>Define tu acceso</h1>
+      </div>
+      <div class="right">
+        <h2>Escoge una contraseña</h2>
+        <div class="progress-bar">
+          <div class="progress-step active"></div>
+          <div class="progress-step active"></div>
+          <div class="progress-step active"></div>
+        </div>
+        <form>
+          <label for="contrasena">Contraseña:</label>
+          <input type="password" id="contrasena">
+          
+          <label for="confirmar-contrasena">Confirmar contraseña:</label>
+          <input type="password" id="confirmar-contrasena">
+          
+          <button type="submit">Finalizar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
