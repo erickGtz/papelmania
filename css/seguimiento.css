@@ -1,0 +1,44 @@
+
+/* Estilos de las tarjetas */
+.card-header {
+  background-color: #1c3d7b;
+  color: white;
+  font-size: 1.4rem; /* Tamaño de letra de la cabecera */
+  font-weight: 500;
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+
+/* Botón de regreso */
+.back-button {
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Tamaño de letra del título y subtítulos */
+h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* Tamaño de letra de los elementos de los pedidos */
+.card-body p {
+  font-size: 1.2rem;
+}
+
+/* Hover en los elementos de navegación */
+.navbar-nav .nav-link:hover, .dropdown-item:hover {
+  color: #067CFF; /* Cambiar a un color destacable al pasar el cursor */
+}
+
+.btn-color {
+  background-color:white;
+  color: black;
+}
+
+.btn-color:hover{
+  background-color: #067CFF;
+}

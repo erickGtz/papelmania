@@ -1,0 +1,43 @@
+<!-- mis_pedidos.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Pedidos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tambien agreguen esto para que sirva bien el nav -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../css/seguimiento.css">
+  </head>
+
+  <body>
+    <!-- Es necesario poner estos elementos para que cargue el Nav -->
+    <div id="navbar-container"></div>
+
+
+
+    <!-- Contenido principal -->
+    <div class="container mt-4">
+      <div class="d-flex align-items-center mb-3">
+        <h4>Mis pedidos</h4>
+      </div>
+
+      <!-- Contenedor donde se insertarán los pedidos -->
+      <div id="pedidos-container"></div>
+    </div>
+
+    <!-- Vincular el archivo JavaScript externo -->
+    <script src="../js/seguimiento.js"></script>
+    <!-- Navbar -->
+    <script src="../js/agregarNav.js"></script>
+
+
+  </body>
+
+</html>

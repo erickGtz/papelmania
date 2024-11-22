@@ -9,14 +9,13 @@
   background-color: #0D2C5E; /* Fondo azul */
 }
 
-.navbar-custom .navbar-brand h2 {
+.navbar-custom .navbar-brand h3 {
   font-weight: bold; /* Negrita para el título */
 }
 
 .navbar-custom .navbar-brand, 
 .navbar-custom .nav-link {
   color: #ffffff; /* Letras en blanco */
-  font-family: Arial, sans-serif; /* Cambiar la fuente aquí */
 }
 
 .navbar-custom .nav-link:hover,
@@ -33,12 +32,32 @@
 }
 
 a .icono-grande {
-  margin-top: 20px;
   margin-left: 20px;
-  font-size: 3rem;  /* Puedes ajustar el tamaño a lo que necesites */
+  font-size: 2rem;  /* Puedes ajustar el tamaño a lo que necesites */
   color: black;
+  margin-bottom: 0px;
 }
 
 .roadmap {
   border: #0D2C5E 2px solid;
+}
+
+.btn-primary:hover {
+  background-color: #ffc107;
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #1c3d7b;
+  border: none;
+}
+
+.btn-color {
+  background-color:white;
+  color: black;
+}
+
+.btn-color:hover {
+  background-color: #0D2C5E;
+  color: rgb(255, 255, 255);
 }

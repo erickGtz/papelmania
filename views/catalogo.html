@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <!-- Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/catalogo.css">
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+
+  <body>
+    <div id="navbar-container"></div>
+
+    <!-- Contenedor de toda la página -->
+    <div class="container-fluid ms-5 mt-4">
+      <!-- Barra de búsqueda y opciones -->
+      <div class="row mb-4 align-items-center">
+        <div class="col-8 d-flex align-items-center">
+          <input type="text" id="search-input" class="form-control search-input" placeholder="Buscar">
+          <div class="col-4">
+            <select id="sort-price" class="form-select">
+              <option value="" selected disabled>Ordenar por precio</option>
+              <option value="asc">Menor a mayor</option>
+              <option value="desc">Mayor a menor</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Sección de productos -->
+        <div class="col-lg-9">
+          <div class="row">
+            <!-- Tarjetas de productos generadas dinámicamente aquí -->
+            <div id="product-list" class="d-flex flex-wrap"></div>
+          </div>
+        </div>
+
+        <!-- Carrito de compras (siempre visible) -->
+        <div class="col-lg-3" id="cart-container">
+          <div class="cart">
+            <h5>Carrito de compras</h5>
+            <ul id="cart-items"></ul>
+            <div class="cart-total">
+              <strong>Total:</strong> $<span id="total-price">0.00</span>
+            </div>
+            <a href="pago.html"><button class="btn btn-primary w-100 mt-3">Pagar</button></a>
+            <!-- Botón para borrar todo el carrito -->
+            <button class="btn btn-danger w-100 mt-3" id="clear-cart-btn">Borrar todo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de detalles del producto -->
+    <div id="product-modal" class="product-modal">
+      <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <div id="modal-body">
+          <img id="modal-img" src="" alt="Imagen del producto">
+          <h5 id="modal-title"></h5>
+          <p id="modal-description"></p>
+          <p><strong>Precio:</strong> $<span id="modal-price"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="../js/catalogo.js"></script>
+    <script src="../js/agregarNav.js"></script>
+  </body>
+
+</html>
