@@ -1,0 +1,175 @@
+/* Step Indicator */
+.step-indicator .step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.step-circle-activo {
+  margin-top: 30px;
+  width: 50px;
+  height: 50px;
+  background: #1c3d7b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(249, 249, 249);
+  margin-right: 15px; /* Espacio entre el círculo y el texto */
+}
+
+.step-circle{
+  margin-top: 30px;
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  border: #1c3d7b solid 3px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-right: 15px; /* Espacio entre el círculo y el texto */
+}
+
+.step-number {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.step-text {
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  margin-top: 45px;
+  white-space: nowrap; /* Evitar salto de línea en el texto */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Add spacing and alignment adjustments */
+.step-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.product-summary {
+  text-align: center;
+  margin: auto;
+}
+
+.totales {
+  margin-top: 45%;
+}
+
+.bt-enviar{
+  width: 80%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.bt-cancelar{
+  width: 80%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+/* Content Area */
+.product-summary h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.product-item {
+  font-size: 20px;
+}
+
+.product-number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-item img {
+  width: 127px;
+  height: 79px;
+}
+
+.total p, .total h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.total p {
+  font-style: italic;
+}
+
+/* Button and Icon */
+.btn-danger i {
+  font-size: 20px;
+}
+
+.btn-primary {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-danger {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Adjustments for layout */
+.product-item .col-md-8 {
+  display: flex;
+  align-items: center;
+}
+
+.product-item .col-md-8 p {
+  margin: 0;
+}
+
+.product-item .col-md-8 .ml-3 {
+  margin-left: 20px;
+}
+
+.product-item .col-md-4 {
+  padding-top: 20px;
+}
+
+.product-item .col-md-4 h3 {
+  font-weight: bold;
+}
+
+.bordear{
+  border-right: #000000 2px solid;
+}
+
+.progress {
+  margin: auto;
+  width: 80%;
+  height: 40px;
+  background-color: #e9ecef; /* Fondo gris claro */
+  border-radius: 10px;
+}
+
+.progress-bar {
+  background-color: #1c3d7b; /* Color verde de la barra */
+  color: white;
+  text-align: center;
+  line-height: 20px; /* Centra el texto en la barra */
+  border-radius: 10px;
+}
+
+.textoBarra{
+  font-size: 22px;
+}

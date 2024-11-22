@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f4f6;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  max-width: 900px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.left-section, .right-section {
+  padding: 40px;
+  flex: 1;
+}
+
+.left-section {
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.9rem;
+}
+
+.left-section h1 {
+  font-size: 2em;
+  color: #1a1a2e;
+  font-weight: 700;
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.progress {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.progress-indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #4A90E2;
+  transition: background-color 0.3s;
+}
+
+.progress-indicator.inactive {
+  background-color: #c4c4c4;
+}
+
+.right-section h2 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #1a1a2e;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 0.9em;
+  color: #666;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #4A90E2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+.next-button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: #4A90E2;
+  color: #ffffff;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.next-button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.h1 {
+  color: #0d2c5e;
+  font-size: 30px;
+}

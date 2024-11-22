@@ -1,0 +1,39 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f4f8;
+  padding-top: 100px; /* Ajuste para la navbar */
+}
+
+.profile-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1c3d7b;
+}
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.profile-info h3 {
+  color: #1c3d7b;
+}
+.profile-info p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.profile-inf h3 {
+  color: black;
+  margin: 25px;
+}

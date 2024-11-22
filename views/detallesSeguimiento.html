@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis pedidos</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tambien agreguen esto para que sirva bien el nav -->
+    <link rel="stylesheet" href="../css/nav.css">
+        <link rel="stylesheet" href="../css/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../css/detalles.css">
+     <script src="../js/agregarNav.js"></script>
+    <script src="../js/detalles.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Es necesario poner estos elementos para que cargue el Nav -->
+    <div id="navbar-container"></div>
+
+    <!-- Contenido de seguimiento de pedidos -->
+    <div class="container mt-4">
+      <h4>Mis pedidos</h4>
+
+
+      <div id="pedido-info" class="border p-3 mb-3 mt-5">
+        <!-- El número de pedido se insertará aquí -->
+        <h5 id="pedido-id">Pedido #</h5>
+        <p><strong>Titular:</strong> Nombre del titular</p>
+        <p><strong>Número de tarjeta:</strong> **** **** **** *214</p>
+      </div>
+
+      <h5 class="mt-5">Esperando a ser entregado</h5>
+      <div class="progress-container">
+        <div class="step completed">
+          <div class="step-icon">✔️</div>
+          <p>Empaquetado</p>
+        </div>
+        <div class="line completed"></div>
+        <div class="step completed">
+          <div class="step-icon">🚚</div>
+          <p>En ruta</p>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+          <div class="step-icon">📍</div>
+          <p>En el punto de entrega</p>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+          <div class="step-icon">📄</div>
+          <p>Recibido</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>

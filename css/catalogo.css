@@ -1,0 +1,131 @@
+/* Ajustes generales */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  padding-top: 85px; /* Ajuste para el navbar */
+}
+
+/* Barra de búsqueda */
+.search-input {
+  width: 100%;
+  max-width: 300px; /* Tamaño del buscador más pequeño */
+  margin-right: 10px;
+}
+
+.espacio{
+  margin-bottom: 10px;
+}
+
+/* Estilo de las tarjetas de productos */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0.5rem;
+  width: 150px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer; /* Indicamos que la imagen es clickeable */
+}
+
+.card .card-body {
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+.card .btn {
+  background-color: #1c3d7b;
+  color: white;
+  border-radius: 5px;
+}
+
+.card .btn:hover {
+  background-color: #ffc107;
+  color: #1c3d7b;
+}
+
+/* Carrito de compras (siempre visible) */
+#cart-container {
+  position: fixed;
+  top: 88px;
+  right: 0;
+  padding-top: 85px;
+  height: 100%;
+  width: 300px;
+  background-color: #f8f9fa;
+  border-left: 2px solid #ddd;
+  padding: 1rem;
+}
+
+.cart h5 {
+  font-size: 1.5rem;
+  
+}
+
+.cart-total {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  background-color: #1c3d7b;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #ffc107;
+  color: #1c3d7b;
+}
+
+/* Estilos del Modal */
+.product-modal {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo borroso */
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-modal .modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+}
+
+.product-modal img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+}
+
+.product-modal .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #1c3d7b;
+  cursor: pointer;
+}
+
+.product-modal h5 {
+  font-size: 1.8rem;
+}
+
+.product-modal p {
+  font-size: 1.2rem;
+}

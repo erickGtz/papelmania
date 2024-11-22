@@ -1,0 +1,258 @@
+/* Step Indicator */
+.step-indicator .step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.step-circle-activo {
+  width: 50px;
+  height: 50px;
+  background: #1c3d7b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin-right: 15px; /* Espacio entre el círculo y el texto */
+}
+
+.step-circle{
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  border: #1c3d7b solid 3px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-right: 15px; /* Espacio entre el círculo y el texto */
+}
+
+.step-number {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.step-text {
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  margin-top: 18px;
+  white-space: nowrap; /* Evitar salto de línea en el texto */
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-cont{
+  width: 70%;
+}
+
+/* Add spacing and alignment adjustments */
+.step-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.product-summary {
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  border-bottom: #343434 2px solid;
+}
+
+.totales {
+  margin-top: 45%;
+}
+
+.bt-enviar {
+  width: 80%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+/* Content Area */
+.product-summary h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.product-item {
+  font-size: 20px;
+}
+
+.product-number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-item img {
+  width: 127px;
+  height: 79px;
+}
+
+.total p, .total h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.total p {
+  font-style: italic;
+}
+
+/* Button and Icon */
+.btn-danger i {
+  font-size: 20px;
+}
+
+.btn-primary {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Adjustments for layout */
+.product-item .col-md-8 {
+  display: flex;
+  align-items: center;
+}
+
+.product-item .col-md-8 p {
+  margin: 0;
+}
+
+.product-item .col-md-8 .ml-3 {
+  margin-left: 20px;
+}
+
+.product-item .col-md-4 {
+  padding-top: 20px;
+}
+
+.product-item .col-md-4 h3 {
+  font-weight: bold;
+}
+
+.bordear {
+  border-right: #000000 2px solid;
+}
+
+.progress {
+  margin: auto;
+  width: 80%;
+  height: 40px;
+  background-color: #e9ecef; /* Fondo gris claro */
+  border-radius: 10px;
+}
+
+.progress-bar {
+  background-color: #1c3d7b; /* Color verde de la barra */
+  color: white;
+  text-align: center;
+  line-height: 20px; /* Centra el texto en la barra */
+  border-radius: 10px;
+}
+
+.textoBarra {
+  font-size: 22px;
+}
+
+/* Botones Doble (Mi Facultad / Recoger en Tienda) */
+.row button {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.row button.btn {
+  border-radius: 5px; /* Bordes redondeados para botones */
+}
+
+.row .col-6 {
+  padding: 5px; /* Añadir un poco de espacio alrededor de los botones */
+}
+
+.titulo{
+  border-bottom: #333 2px solid;
+}
+
+.bt-cancelar {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Inputs de Dirección y Edificio */
+.form-label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.form-label-dir {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+input.form-control {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 100%; /* Asegurarse de que el input ocupe todo el ancho */
+}
+
+/* Botón de Continuar */
+.row .text-right .continuar button {
+  font-size: 20px;
+  padding: 12px 20px;
+  border-radius: 5px;
+  width: 50%;
+  background-color: #1c3d7b; /* Azul más visible */
+  color: white;
+  border: none;
+  text-align: center;
+}
+
+
+
+.opciones2{
+  background-color: #ffffff;
+  color: #1c3d7b; /* Color al pasar el mouse */
+  border: #1c3d7b 1px solid;
+}
+
+.opciones2:hover {
+    background-color: #1c3d7b;
+  color: #fff; /* Color al pasar el mouse */
+}
+
+.row.justify-content-center {
+  align-items: center; /* Alinea verticalmente */
+}
+
+.form-label {
+  margin-bottom: 0; /* Elimina el margen inferior del label */
+  text-align: right; /* Alinea el texto a la derecha */
+}
+
+input.form-control {
+  margin: 0; /* Elimina márgenes adicionales */
+  padding: 10px; /* Ajusta el padding para uniformidad */
+}
+
+button.opciones:disabled {
+    background-color: #1c3d7b;
+  color: #fff; /* Color al pasar el mouse */
+  opacity: 1; /* Mantén la opacidad */
+  cursor: not-allowed; /* Muestra un cursor que indica que no es clickeable */
+}
+
